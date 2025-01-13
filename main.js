@@ -1,0 +1,1 @@
+alert('Terima kasih sudah mengunjungi website portofolio saya !');

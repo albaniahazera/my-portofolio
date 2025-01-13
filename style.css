@@ -1,0 +1,120 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #383737;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: right;
+    background-color: #000000;
+    padding: 4px 4px;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h4 {
+    color: #ff0000;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    justify-items: right;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(38, 216, 216, 0.76);
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 80%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+  
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+  
+.link-ig:hover {
+    color: rgb(255, 60, 0);
+}
+  
+.link-yt:hover {
+    color: red;
+}
+
+.github {
+    width: 16px;
+    height: 16px;
+}
+
+.content {
+    background-color: rgba(39, 37, 37, 0.3);
+    color: aqua;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.roles {
+    padding-left: 15px;
+}
+
+.project {
+    padding-top: 15px;
+}
+
+.proyek {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.image {
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .image {
+        width: 240px;
+        height: 180px;
+    }
+}
+
+footer {
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
