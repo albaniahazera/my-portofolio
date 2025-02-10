@@ -82,25 +82,24 @@
       </nav>
     </header>
 
-    <div id="div1">
-
-    </div>
-
     <main>
-      <section class="saya">
-        <div class="content">
-          <h1>Albania Hazera</h1>
-            <ul class="roles">
+      <div>
+      <section>
+        <div class="content" id="conten" onclick="toggleText('conten', 'role')">
+          <h1 class="title">Albania Hazera</h1>
+          <div class="line"></div>
+            <ul class="roles" id="role">
               <li>Frontend Developer</li>
               <li>Modder Minecraft Java</li>
             </ul>
         </div>
       </section>
 
-      <section class="about">
-        <div class="content">
-          <h2>Tentang Saya</h2>
-            <p>
+      <section>
+        <div class="content" id="conten-1" onclick="toggleText('conten-1', 'role-1')"> 
+          <h2 class="title">Tentang Saya</h2>
+          <div class="line"></div>
+            <p class="teks" id="role-1">
               Halo, Nama saya Albania Hazera. Saya web developer dari web yang berdomain alhazera25, saya masih belajar   
               dalam membuat web menggunakan HTML, CSS, JavaScript, dan berbagai teknologi lainnya. Tujuan saya 
               adalah terus berkembang dan berkontribusi dalam dunia teknologi melalui karya-karya inovatif.
@@ -108,19 +107,26 @@
         </div>
       </section>
 
-      <section class="content">
-        <h2>Sedang Mempelajari</h2>
-          <ul class="roles">
+      <section>
+        <div class="content" id="conten-2" onclick="toggleText('conten-2', 'role-2')">
+        <h2 class="title">Sedang Mempelajari</h2>
+        <div class="line"></div>
+          <ul class="roles" id="role-2">
             <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Java</li>
-              <li>Python</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
           </ul>
+        </div>
       </section>
+      
 
-      <section class="content">
-        <h2>Proyek Saya</h2>
+      <section>
+        <div class="content" id="conten-3" onclick="toggleText('conten-3', 'proyek')">
+        <h2 class="title">Proyek Saya</h2>
+        <div class="line"></div>
+        <div id="proyek" class="pryek">
           <div class="project">
             <h3>Proyek 1</h3>
             <p>
@@ -155,12 +161,17 @@
                class="proyek" >Program Terminal Python By AL haZera25
             </a>
             </p>
-          </div>        
+          </div>
+        </div>        
+      </div>
       </section>
+    </div>
     </main>
 
     <footer>
-      <p class="copyright">&copy; 2025 AL haZera25. All rights reserved</p>
+      <div class="container">
+        <p class="copyright">&copy; 2025 AL haZera25. All rights reserved</p>
+      </div>
     </footer>
 
     <script src="JavaScript/main.js"></script>

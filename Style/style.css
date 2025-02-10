@@ -77,6 +77,10 @@ nav {
     height: 16px;
 }
 
+main {
+    min-height: 85vh;
+}
+
 .content {
     background-color: rgba(39, 37, 37, 0.3);
     color: aqua;
@@ -84,14 +88,41 @@ nav {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+    padding-bottom: 2px;
+}
+
+.line {
+    padding: 0.5px;
+    background-color: aqua;
 }
 
 .roles {
     padding-left: 15px;
+    padding-top: 3px;
+    display: none;
+}
+
+.teks {
+    padding-top: 3px;
+    display: none;
 }
 
 .project {
     padding-top: 15px;
+}
+
+.pryek {
+    display: none;
 }
 
 .proyek {
@@ -103,18 +134,30 @@ nav {
     padding-top: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 998px) {
     .image {
         width: 240px;
         height: 180px;
     }
+
+    main {
+        min-height: 92vh;
+    }
 }
 
 footer {
+    padding-top: 5px;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.7);
+    background-color: #000000;
+}
+
+.container {
     text-align: center;
+    background-color: #000000;
+    padding: 5px;
 }
 
 .copyright {
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
 }
